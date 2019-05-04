@@ -1,0 +1,41 @@
+﻿@page
+@model PrivacyModel
+@{
+    ViewData["Title"] = "Question #53";
+}
+<h2>53</h2>
+
+<p>
+    @Model.Question.Content
+</p>
+
+<form method="post">
+    <table>
+        @for (int i = 0; i < Model.Answers.Count; i++)
+        {
+            <tr>
+                <td>
+                    @Model.Answers[i].Content   <input asp-for="Answers[i].Correct" />
+                    @if (Model.Messages != null)
+                    {
+                        if (Model.Messages[i].Equals("Correct"))
+                        {
+                            <span style="color: green">@Model.Messages[i] </span>
+                        }
+                        else
+                        {
+                            <span style="color: red">@Model.Messages[i] </span>
+                        }
+                    }
+
+                </td>
+            </tr>
+            <input type="hidden" asp-for="Answers[i].Id" value="@Model.Answers[i].Id" />
+        }
+        <tr>
+            <td>
+                <input type="submit" value="submit" />
+            </td>
+        </tr>
+    </table>
+</form>

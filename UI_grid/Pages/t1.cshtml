@@ -1,0 +1,78 @@
+﻿@page
+@model UI_grid.Pages.Shared.t1Model
+@{
+    ViewData["Title"] = "UI";
+}
+
+@*<h2>This is a Grid User Interface.  To select a box please hover over the number to be redirected to a new page.</h2>*@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Bootstrap Example</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+</head>
+<body>
+
+    <div class="container-fluid">
+        <h1>Three equal width columns</h1>
+        <p>Note: Try to add a new div with class="col" inside the row class - this will create four equal-width columns.</p>
+        <div class="row"> @*1st row*@
+            @*<div class="col" style="background-color:lavender; ">.col</div>
+        <div class="col" style="background-color:orange;">.col</div>
+        <div class="col" style="background-color:lavender;">.col</div>*@
+            <div class="col" style="background-color:lavender;"></div>
+            <div class="col" style="background-color:lavender;">Terminology</div>
+            <div class="col" style="background-color:lavender;">Requirements</div>
+            <div class="col" style="background-color:lavender;">SCM</div>
+            <div class="col" style="background-color:lavender;">Estimation</div>
+            <div class="col" style="background-color:lavender;">Agile</div>
+            <div class="col" style="background-color:lavender;">Peer Reviews</div>
+            <div class="col" style="background-color:lavender;">Design</div>
+            <div class="col" style="background-color:lavender;">Tools</div>
+            <div class="col" style="background-color:lavender;">Testing</div>
+            <div class="col" style="background-color:lavender;">Process Architecture</div>
+            <div class="col" style="background-color:lavender;">Improvement</div>
+        </div>
+        <div class="row" > @*2nd row*@
+            <div class="col" style="background-color:lavender";>Terminology </div>
+            <div class="col" style="background-color:gray";></div>
+            <div class="col" style="background-color:lavender";><a href="/_1"  target="_blank" class="btn btn-info" role="button">1</a></div>
+            <div class="col" style="background-color:lavender";><a href="/_2" target="_blank"class="btn btn-info" role="button">2</a></div>
+            <div  class="col" style="background-color:lavender";><a href="/_3"  target="_blank"class="btn btn-info" role="button">3</a></div>
+            <div class="col" style="background-color:lavender";><a href="/_4" target="_blank"class="btn btn-info" role="button">4</a></div>
+            <div class="col" style="background-color:lavender";><a href="/_5" target="_blank"class="btn btn-info" role="button">5</a></div>
+            <div class="col" style="background-color:lavender";><a href="/_6" target="_blank"class="btn btn-info" role="button">6</a></div>
+            <div class="col" style="background-color:lavender";><a href="/_7" target="_blank"class="btn btn-info" role="button">7</a></div>
+            <div class="col" style="background-color:lavender";><a href="/_8" target="_blank"class="btn btn-info" role="button">8</a></div>
+            <div class="col" style="background-color:lavender";><a href="/_9" target="_blank"class="btn btn-info" role="button">9</a></div>
+            <div class="col" style="background-color:lavender";><a href="/_10" target="_blank"class="btn btn-info" role="button">10</a></div>
+        </div>
+
+        <div class="row">
+            @*3rd row*@
+
+            <div class="col" style="background-color:lavender";  >Requirements </div>
+            <div class="col" style="background-color:gray";></div>
+            <div class="col" style="background-color:gray";></div>
+            <div class="col" style="background-color:lavender";><a href="/_11" target="_blank" class="btn btn-info" role="button">11</a></div>
+            <div class="col" style="background-color:lavender";><a href="/_12" target="_blank" class="btn btn-info" role="button">12</a></div>
+            <div class="col" style="background-color:lavender";><a href="/_13" target="_blank" class="btn btn-info" role="button">13</a></div>
+            <div class="col" style="background-color:lavender";><a href="/_14" target="_blank" class="btn btn-info" role="button">14</a></div>
+            <div class="col" style="background-color:lavender";><a href="/_15" target="_blank" class="btn btn-info" role="button">15</a></div>
+            <div class="col" style="background-color:lavender";><a href="/_16" target="_blank" class="btn btn-info" role="button">16</a><button formaction="/_16"></button></div>
+            <div class="col" style="background-color:lavender"; ><a href="/_17" target="_blank" class="btn btn-info" role="button">17</a></div>
+            <div class="col" style="background-color:lavender"; ><a href="/_18" target="_blank" class="btn btn-info" role="button">18</a></div>
+            <div class="col" style="background-color:lavender";  ><a href="/_19" target="_blank" class="btn btn-info" role="button">19</a></div>
+
+        </div>
+
+    </div>
+
+</body>
+</html>
